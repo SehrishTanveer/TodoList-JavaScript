@@ -23,8 +23,7 @@ Welcome to **MyTodos**, a simple yet powerful task manager web app built with **
 
 📸 **Screenshots**
 
-![MyTodo-s](<img width="944" alt="MyTodo" src="https://github.com/user-attachments/assets/cc0fc1ec-3928-4c01-bf79-947ccadd103e" />
-)
+![MyTodo-s](https://github.com/user-attachments/assets/cc0fc1ec-3928-4c01-bf79-947ccadd103e)
 
 🧠 **How It Works**
 
