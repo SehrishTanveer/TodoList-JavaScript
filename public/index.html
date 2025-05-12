@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>To-Do App</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white flex flex-col w-full max-w-4xl p-6 rounded-xl shadow-xl">
+    <h1 class="flex items-center gap-2 text-3xl md:text-4xl font-semibold text-blue-500 mb-6 justify-center">
+      <i class="fa-solid fa-check-square text-5xl md:text-6xl"></i>
+      <span class="underline">My Todos</span>
+    </h1>
+
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
+      <input type="text" id="addTask" placeholder="Add new..." class="flex-1 w-full text-lg px-4 py-2 border rounded focus:outline-none">
+      <input type="date" id="dueDate" class="text-sm border rounded px-3 py-2">
+      <button onclick="addTask()" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded">Add</button>
+    </div>
+
+    <div class="flex flex-col sm:flex-row justify-between gap-4 mb-4">
+      <select id="filterSelect" onchange="filterTasks()" class="border rounded px-3 py-2 text-sm w-full sm:w-auto">
+        <option value="all">All</option>
+        <option value="active">Active</option>
+        <option value="done">Done</option>
+        <option value="due">Has Due Date</option>
+        <option value="important">Important</option>
+      </select>
+
+      <select id="sortSelect" onchange="filterTasks()" class="border rounded px-3 py-2 text-sm w-full sm:w-auto">
+        <option value="alphabetical">Alphabetically</option>
+        <option value="dueDate">Due Date</option>
+      </select>
+    </div>
+
+    <div id="taskList" class="space-y-4">
+      <!-- Tasks will be dynamically added here -->
+    </div>
+  </div>
+
+  <script src="/public/script.js"></script>
+</body>
+</html>
